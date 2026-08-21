@@ -1,0 +1,18 @@
+class Polymorphism {
+    void display() {
+        System.out.println("Parent method");
+    }
+}
+
+class Child extends Polymorphism {
+    @Override
+    void display() {
+        System.out.println("Child method");
+    }
+
+    public static void main(String[] args) {
+        Polymorphism obj = new Child();
+
+        obj.display();
+    }
+}
