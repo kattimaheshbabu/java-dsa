@@ -1,0 +1,15 @@
+abstract class Abstraction {
+    abstract void display();
+}
+
+class Child extends Abstraction {
+    void display() {
+        System.out.println("Abstraction example");
+    }
+
+    public static void main(String[] args) {
+        Abstraction obj = new Child();
+
+        obj.display();
+    }
+}
